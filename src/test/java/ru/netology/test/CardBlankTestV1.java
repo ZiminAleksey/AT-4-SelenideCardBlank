@@ -1,3 +1,5 @@
+package ru.netology.test;
+
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -28,7 +30,6 @@ public class CardBlankTestV1 {
         calendar.add(Calendar.DAY_OF_MONTH, +5);
         return dateFormat.format(calendar.getTime());
     }
-
 
     @Test
     void completedBlank() {
